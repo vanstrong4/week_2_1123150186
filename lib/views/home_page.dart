@@ -39,6 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
             floatingActionButton: Padding(
               padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 16.0),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   FloatingActionButton(
                     onPressed: (){
