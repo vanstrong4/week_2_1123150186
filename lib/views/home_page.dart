@@ -37,14 +37,21 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
             floatingActionButton: Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 16.0),
               child: Row(
                 children: [
                   FloatingActionButton(
                     onPressed: (){
+                      value.kurang();
+                    },
+                    tooltip: 'Kurang',
+                    child: const Icon(Icons.remove),
+                  ),
+                  FloatingActionButton(
+                    onPressed: (){
                       value.increment();
                     },
-                    tooltip: 'Increment',
+                    tooltip: 'Tambah',
                     child: const Icon(Icons.add),
                   ),
                 ],
