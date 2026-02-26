@@ -5,5 +5,10 @@ class CounterModel {
   void increment(){
     _angka++;
   }
-  
+
+  void kurang(){
+    if(_angka > 0){
+      _angka--;
+    }
+  }
 }
